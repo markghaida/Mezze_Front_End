@@ -1,5 +1,5 @@
 import React from "react";
-import MezzeCard from "./MezzeCard"; 
+import MezzeCard from "./MezzeCard";
 
 
 function MezzeList({ mezzes, handleOrder }) {
@@ -9,12 +9,11 @@ function MezzeList({ mezzes, handleOrder }) {
   })
 
   return (
-    <div>
-      <h1>Mezze Options</h1>
+    <ul className="cards">
       {mezzeList}
-    </div>
+    </ul>
   );
 }
 
 
-export default MezzeList; 
+export default MezzeList;

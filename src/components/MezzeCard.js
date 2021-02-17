@@ -14,7 +14,7 @@ function MezzeCard({ mezze, handleOrder }) {
         },
         body: JSON.stringify({
           user_id: 1,
-          mezze_id: mezze.id, 
+          mezze_id: mezze.id,
           calories: mezze.calories
         }),
       })
@@ -22,30 +22,32 @@ function MezzeCard({ mezze, handleOrder }) {
       .then((newOrder) => {
         // handleOrder(newOrder)
         handleOrder(newOrder)
-        handleOrderList(newOrder)
       })
     }
   }
 
-  // persist toggle to db 
+  // persist toggle to db
   // create or make a post request to db --> localhost3000/orders
-  // will create singular order and add to orderDetails state variable 
-  // 
-  
+  // will create singular order and add to orderDetails state variable
+  //
+
  return (
-  <div>
-    {mezze.name}
-    {mezze.calories}
+  <li className="card">
+    <b><p>{mezze.name}</p></b>
+    <p>{mezze.calories} Cal</p>
+    <p>${mezze.price}</p>
+    <p>{mezze.description}</p>
+    <img src={mezze.image} alt={mezze.name} />
     {inCart ? (
       <button className="primary" onClick={handleToggleCart}>In Cart</button>
     ) : (
       <button onClick={handleToggleCart}>Add To Cart</button>
     )}
-  </div>
- ) 
+   </li>
+ )
 }
 
 
 
 
-export default MezzeCard; 
+export default MezzeCard;
