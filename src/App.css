@@ -150,6 +150,16 @@ body {
   cursor: pointer;
 }
 
+
+ .logo {
+  /* justify-content: left;
+  align-items: left;
+  text-align: left;
+  float: left; */
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
   background-color: #2980B9;

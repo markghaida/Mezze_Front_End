@@ -5,8 +5,9 @@ function Header({ user }) {
     return(
        <div class="topnav"> 
     
-       <img src="https://i.ibb.co/8YLxKg9/Habibi-Mezze-1.png" alt=""/>
-        <h1>Habibi Mezze</h1>
+       {/* <img class="logo" src="" alt=""/> */}
+       <img class="logo" src="https://i.ibb.co/37mS8RF/Habibi-Mezze-3.png" alt=""/>
+        {/* <h1 class="habibi">Habibi Mezze</h1> */}
         <br></br>
       <br></br>
         {/* <h5>Hello, is habibi hungry?</h5> */}

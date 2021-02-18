@@ -106,12 +106,12 @@ function MezzePage() {
 
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {filter}
+                Filter
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item onClick={() => setFilter("All")} onClick={allMezzes}>All</Dropdown.Item>
-                <Dropdown.Item onClick={() => setFilter("Vegetarian")} onClick={handleVegetarian}>Vegetarian</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilter("All"), allMezzes}>All</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilter("Vegetarian"), handleVegetarian}>Vegetarian</Dropdown.Item>
                
               </Dropdown.Menu>
             </Dropdown>
