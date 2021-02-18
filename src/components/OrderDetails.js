@@ -3,9 +3,11 @@ function OrderDetails({ orderDetail, handleDeleteBowl }) {
         const orderList = orderDetail.map((o) => {
             return (
                 <div key={o.id}>
+                    <br></br>
                     <p>{o.mezze.name}</p>
                     <p>${o.mezze.price}</p>
                     <button onClick={() => handleDeleteClick(o)}>Delete</button>
+                    <br></br>
                 </div>
             )
         })
@@ -15,6 +17,15 @@ function OrderDetails({ orderDetail, handleDeleteBowl }) {
             return (
                 <div key={o.id}>
                     <p>${total += o.mezze.price}</p>
+                </div>
+            )
+        })
+
+        let totalPoints = 0; 
+        const pointsTotal = orderDetail.forEach((o) => {
+            return (
+                <div key={o.id}>
+                    <p>${totalPoints += o.mezze.points}</p>
                 </div>
             )
         })
@@ -30,7 +41,14 @@ function OrderDetails({ orderDetail, handleDeleteBowl }) {
        <div class="footer">
           
            {orderList}
-           <p>Order Total: ${total}</p>
+           <br></br>
+           <b>Order Total: ${total}</b> 
+           <br></br>
+           Total Points: {totalPoints}
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
           
        </div>
        

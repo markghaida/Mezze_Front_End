@@ -9,10 +9,8 @@ function MezzePage() {
 
     const [orderDetail, setOrderDetail] = useState([])
     const [mezzes, setMezzes] = useState([]);
+    const [filter, setFilter] = useState("All");
     
-    
-
-
         useEffect(() => {
             fetch(`http://localhost:3000/mezzes`)
             .then(res => res.json())
@@ -102,17 +100,18 @@ function MezzePage() {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+          <br></br>
+          <br></br>
             <h2>Menu</h2>
-
 
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                All
+                {filter}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item onClick={allMezzes}>All</Dropdown.Item>
-                <Dropdown.Item onClick={handleVegetarian}>Vegetarian</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilter("All")} onClick={allMezzes}>All</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilter("Vegetarian")} onClick={handleVegetarian}>Vegetarian</Dropdown.Item>
                
               </Dropdown.Menu>
             </Dropdown>
