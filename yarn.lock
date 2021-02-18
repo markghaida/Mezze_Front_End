@@ -1471,7 +1471,7 @@
     "schema-utils" "^2.6.5"
     "source-map" "^0.7.3"
 
-"@popperjs/core@^2.5.3":
+"@popperjs/core@^2.5.3", "@popperjs/core@^2.7.0":
   "integrity" "sha512-V3WyEc8ZyAuOQ2fpFuTuYYOd2tV4NePeSdxaHYgYAOs7ERLxlcFi2XsmgI5LJFdAUmJKXsg8jaIiVTkTHQygQw=="
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.7.0.tgz"
   "version" "2.7.0"
