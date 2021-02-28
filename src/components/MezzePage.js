@@ -12,7 +12,7 @@ function MezzePage() {
     const [filter, setFilter] = useState("All");
     
         useEffect(() => {
-            fetch(`http://localhost:3000/mezzes`)
+            fetch(`https://sleepy-sierra-44337.herokuapp.com/mezzes`)
             .then(res => res.json())
             .then(setMezzes);  
         }, []);
