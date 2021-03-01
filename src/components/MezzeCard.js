@@ -7,7 +7,7 @@ function MezzeCard({ mezze, handleOrder }) {
   function handleToggleCart() {
     setInCart(!inCart);
     if(inCart === false) {
-      fetch(`http://localhost:3000/orders`, {
+      fetch(`https://sleepy-sierra-44337.herokuapp.com/orders`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
