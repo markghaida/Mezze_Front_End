@@ -31,7 +31,7 @@ function OrderDetails({ orderDetail, handleDeleteBowl }) {
         })
 
         function handleDeleteClick(orderDetail) {
-            fetch(`https://sleepy-sierra-44337.herokuapp.com/${orderDetail.id}`, {
+            fetch(`https://habibi-mezze.herokuapp.com/${orderDetail.id}`, {
               method: "DELETE",
             });
             handleDeleteBowl(orderDetail);

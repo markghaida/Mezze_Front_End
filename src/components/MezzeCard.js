@@ -7,7 +7,7 @@ function MezzeCard({ mezze, handleOrder }) {
   function handleToggleCart() {
     setInCart(!inCart);
     if(inCart === false) {
-      fetch(`https://sleepy-sierra-44337.herokuapp.com/orders`, {
+      fetch(`https://habibi-mezze.herokuapp.com/orders`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
